@@ -1,0 +1,10 @@
+services:
+  - type: worker
+    name: skydownloader-bot
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: BOT_USERNAME
+        sync: false
